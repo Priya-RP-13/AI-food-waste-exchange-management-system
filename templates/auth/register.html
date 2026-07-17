@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | AI Food Waste Exchange System</title>
+</head>
+<body>
+
+    <h1>AI Food Waste Exchange System</h1>
+    <h2>User Registration</h2>
+
+    <form method="POST" action="/register">
+
+        <label for="name">Full Name</label><br>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+        >
+        <br><br>
+
+        <label for="email">Email Address</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+        <br><br>
+
+        <label for="password">Password</label><br>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required
+        >
+        <br><br>
+
+        <label for="confirm_password">Confirm Password</label><br>
+        <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            placeholder="Confirm password"
+            required
+        >
+        <br><br>
+
+        <label>User Role</label><br>
+
+        <input
+            type="radio"
+            id="restaurant"
+            name="role"
+            value="restaurant"
+            required
+        >
+        <label for="restaurant">Restaurant</label>
+
+        <input
+            type="radio"
+            id="ngo"
+            name="role"
+            value="ngo"
+        >
+        <label for="ngo">NGO</label>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <br>
+
+    <p>
+        Already have an account?
+        <a href="/login">Login Here</a>
+    </p>
+
+</body>
+</html>
